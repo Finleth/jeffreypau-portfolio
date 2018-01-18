@@ -30,8 +30,9 @@ $(function() {
         },
         cache: false,
         success: function(res) {
+          var response = JSON.parse(res);
           // Success message
-          if (res.success){
+          if (response.success){
             $('#success').html("<div class='alert alert-success'>");
             $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
               .append("</button>");
@@ -42,7 +43,7 @@ $(function() {
             //clear all fields
             $('#contactForm').trigger("reset");
           } else {
-            console.log(res);
+            console.log(response);
           }
         },
         error: function() {
