@@ -15,6 +15,10 @@ h6 {
   font-weight: 700;
   font-family: 'Montserrat'; }
 
+p {
+  font-size: 18px;
+}
+
 hr.circle-light,
 hr.circle-dark {
   max-width: 15rem;
@@ -191,6 +195,9 @@ header.masthead {
       line-height: 38px; }
   .portfolio-modal .portfolio-modal-dialog h2 {
     font-size: 2rem; }
+  .portfolio-links {
+    font-size: 1.5rem;
+  }
 
 @media (min-width: 768px) {
   .portfolio-modal .portfolio-modal-dialog {
