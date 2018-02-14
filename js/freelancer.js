@@ -25,10 +25,12 @@
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  var respNavCollapse = function() {
     $('.navbar-collapse').collapse('hide');
-  });
+  }
+
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(respNavCollapse);
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
@@ -48,6 +50,8 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
+
+  $(window).scroll(respNavCollapse);
 
   // Modal popup$(function () {
   $('.portfolio-item').magnificPopup({
