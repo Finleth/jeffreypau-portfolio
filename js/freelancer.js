@@ -53,6 +53,8 @@
 
   $(window).scroll(respNavCollapse);
 
+  $(window).on('click', respNavCollapse);
+
   // Modal popup$(function () {
   $('.portfolio-item').magnificPopup({
     type: 'inline',
